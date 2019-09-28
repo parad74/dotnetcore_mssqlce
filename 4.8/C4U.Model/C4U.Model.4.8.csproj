@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEFEFD28-2AA5-4470-9D01-3439E9D3124B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Count4U.Model</RootNamespace>
+    <AssemblyName>Count4U.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.1450.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Devart.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Devart.Data.SQLite, Version=5.5.658.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Devart.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Devart.Data.SQLite.Design, Version=5.5.658.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Devart.Data.SQLite.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.SQLite.Vs, Version=5.5.658.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Devart.Data.SQLite.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.SqlServerCompact.6.3.0\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="ErikEJ.SqlCe40">
+      <HintPath>packages\ErikEJ.SqlCeBulkCopy.2.1.6.15\lib\net40\ErikEJ.SqlCe40.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="Salient.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=03b0b5a60fec3719, processorArchitecture=MSIL">
+      <HintPath>packages\ErikEJ.SqlCeBulkCopy.2.1.6.15\lib\net40\Salient.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Designer">
+      <HintPath>..\Lib\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Core.1.0.111.0\lib\net46\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.111.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.111.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\MainDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Model6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model6.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EntityDeploy Include="App_Data\MainDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MainDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App_Data\MainDB.edmx.diagram">
+      <DependentUpon>MainDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\Count4U.Model.App_Data.AuditDB.datasource" />
+    <None Include="Properties\DataSources\Count4U.Model.App_Data.Count4UDB.datasource" />
+    <None Include="Properties\DataSources\Count4U.Model.App_Data.MainDB.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amd64\sqlceca40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\sqlcecompact40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\sqlceer40EN.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\sqlceme40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\sqlceqp40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\sqlcese40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\MainDB.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\Model6.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model6.cs</LastGenOutput>
+      <DependentUpon>MainDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="x86\sqlceca40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\sqlcecompact40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\sqlceer40EN.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\sqlceme40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\sqlceqp40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\sqlcese40.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT EXIST $(SolutionDir)Count4U\$(OutDir)ImportModules ( mkdir $(SolutionDir)Count4U\$(OutDir)ImportModules )
+copy $(SolutionDir)$(ProjectName)\adapterlink.txt $(SolutionDir)Count4U\$(OutDir)ImportModules\
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <Import Project="..\..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

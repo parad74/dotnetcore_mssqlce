@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bdcf3a3a0e12410baa95541a0fc04f5e" Name="Diagram1" ZoomLevel="76">
+        <EntityTypeShape EntityType="MainDBModel.Branch" Width="3.125" PointX="10.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.BranchMask" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Customer" Width="4.125" PointX="0.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.CustomerConfig" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.CustomerMask" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.CustomerReport" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.ImportAdapter" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.MainDBIni" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MainDBModel.Report" Width="3.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

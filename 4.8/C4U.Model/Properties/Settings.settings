@@ -1,0 +1,287 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Count4U.Model.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AuditDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;metadata=res://*/App_Data.AuditDB.csdl|res://*/App_Data.AuditDB.ssdl|res://*/App_Data.AuditDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">metadata=res://*/App_Data.AuditDB.csdl|res://*/App_Data.AuditDB.ssdl|res://*/App_Data.AuditDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"</Value>
+    </Setting>
+    <Setting Name="Count4UDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;metadata=res://*/App_Data.Count4UDB.csdl|res://*/App_Data.Count4UDB.ssdl|res://*/App_Data.Count4UDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0};Default Lock Timeout=60000;  Max Database Size = {1}; Max Buffer Size = {2}"&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">metadata=res://*/App_Data.Count4UDB.csdl|res://*/App_Data.Count4UDB.ssdl|res://*/App_Data.Count4UDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0};Default Lock Timeout=60000;  Max Database Size = {1}; Max Buffer Size = {2}"</Value>
+    </Setting>
+    <Setting Name="MainDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"</Value>
+    </Setting>
+    <Setting Name="FolderApp_Data" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App_Data</Value>
+    </Setting>
+    <Setting Name="Count4UDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Count4UDB.sdf</Value>
+    </Setting>
+    <Setting Name="EmptyCount4UDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmptyCount4UDB.sdf</Value>
+    </Setting>
+    <Setting Name="EmptyCount4UDBPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\testDB\App_Data\EmptyCount4UDB.sdf</Value>
+    </Setting>
+    <Setting Name="DebugDbPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\..\..\Count4U.Model\</Value>
+    </Setting>
+    <Setting Name="FolderInventor" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Inventor</Value>
+    </Setting>
+    <Setting Name="FolderImport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ImportData</Value>
+    </Setting>
+    <Setting Name="DebugImportPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\..\..\Count4U.Model\</Value>
+    </Setting>
+    <Setting Name="FolderCustomer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Customer</Value>
+    </Setting>
+    <Setting Name="FolderBranch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Branch</Value>
+    </Setting>
+    <Setting Name="FolderLogoFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LogoFile</Value>
+    </Setting>
+    <Setting Name="AuditDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AuditDB.sdf</Value>
+    </Setting>
+    <Setting Name="MainDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MainDB.sdf</Value>
+    </Setting>
+    <Setting Name="SetupDbFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SetupDb</Value>
+    </Setting>
+    <Setting Name="ReportTemplateFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReportTemplate</Value>
+    </Setting>
+    <Setting Name="ReportModulePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\..\..\Count4U.GenerationReport\</Value>
+    </Setting>
+    <Setting Name="ExportToPDAFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ExportToPDA</Value>
+    </Setting>
+    <Setting Name="DebugExportToPDAPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\..\..\Count4U.Model\</Value>
+    </Setting>
+    <Setting Name="UploadFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">UploadPDA</Value>
+    </Setting>
+    <Setting Name="CustomerConfigHash" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CustomerConfigFileType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CustomerConfigQType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CustomerConfigUseAlphaKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="CustomerConfigClientID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CustomerConfigNewItem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FolderErpExport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ExportData</Value>
+    </Setting>
+    <Setting Name="DebugDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\..\..\..\Count4U.Configuration\DebugData</Value>
+    </Setting>
+    <Setting Name="HomeOpacityBackground" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="CustomerOpacityBackground" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="BranchOpacityBackground" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="InventorOpacityBackground" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="MainOpacityBackground" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="HomeBackgroundFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Count4U\trunk\Count4U\Count4U.Media\Background\Home.jpg</Value>
+    </Setting>
+    <Setting Name="BranchBackgroundFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Count4U\trunk\Count4U\Count4U.Media\Background\Branch.jpg</Value>
+    </Setting>
+    <Setting Name="InventorBackgroundFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Count4U\trunk\Count4U\Count4U.Media\Background\Inventor.jpg</Value>
+    </Setting>
+    <Setting Name="MainBackgroundFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Count4U\trunk\Count4U\Count4U.Media\Background\Main.jpg</Value>
+    </Setting>
+    <Setting Name="CustomerConfigIturNameType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ITUR</Value>
+    </Setting>
+    <Setting Name="CustomerConfigIturNamePrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ITUR</Value>
+    </Setting>
+    <Setting Name="CustomerBackgroundFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Count4U\trunk\Count4U\Count4U.Media\Background\Customer.jpg</Value>
+    </Setting>
+    <Setting Name="DBVer" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">84</Value>
+    </Setting>
+    <Setting Name="ProductMakatBarcodesDictionaryCapacity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1000000</Value>
+    </Setting>
+    <Setting Name="ConnectionEFMaxDatabaseSize" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2048</Value>
+    </Setting>
+    <Setting Name="ConnectionEFMaxBufferSize" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4096</Value>
+    </Setting>
+    <Setting Name="CustomerConfigPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">650</Value>
+    </Setting>
+    <Setting Name="MISiDnextDataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\MIS\IDnextData</Value>
+    </Setting>
+    <Setting Name="MISCommunicatorPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\MIS\MISCommunicator</Value>
+    </Setting>
+    <Setting Name="CustomerConfigHTcalculateLookUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">No</Value>
+    </Setting>
+    <Setting Name="AddNewLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="MaxQuantity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">999</Value>
+    </Setting>
+    <Setting Name="LastSync" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DD-MM-YY HH:MM</Value>
+    </Setting>
+    <Setting Name="AllowZeroQuantity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="EmptyCount4MobileDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Count4MobileDbTemplete.db3</Value>
+    </Setting>
+    <Setting Name="SearchDef" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"normal"</Value>
+    </Setting>
+    <Setting Name="CustomerConfigNewItemBool" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="AnalyticDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AnalyticDB.sdf</Value>
+    </Setting>
+    <Setting Name="MaxLen" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="CustomerConfigInvertPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"0"</Value>
+    </Setting>
+    <Setting Name="ConfirmNewLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"true"</Value>
+    </Setting>
+    <Setting Name="ConfirmNewItem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"false"</Value>
+    </Setting>
+    <Setting Name="AutoSendData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"0"</Value>
+    </Setting>
+    <Setting Name="AllowQuantityFraction" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"true"</Value>
+    </Setting>
+    <Setting Name="AddExtraInputValue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"false"</Value>
+    </Setting>
+    <Setting Name="AddExtraInputValueHeaderName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">""</Value>
+    </Setting>
+    <Setting Name="AddExtraInputValueSelectFromBatchListForm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="AllowNewValueFromBatchListForm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="SearchIfExistInBatchList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="AllowMinusQuantity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="FractionCalculate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="RootFolderFtp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mINV</Value>
+    </Setting>
+    <Setting Name="RootComplexDataFolderFtp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mINV\ComplexData</Value>
+    </Setting>
+    <Setting Name="PartialQuantity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="Host1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.100.1</Value>
+    </Setting>
+    <Setting Name="Host2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.100.20</Value>
+    </Setting>
+    <Setting Name="Timeout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="Retry" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="DefaultHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">USB</Value>
+    </Setting>
+    <Setting Name="SameBarcodeInLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ProcessDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;metadata=res://*/App_Data.ProcessDB.csdl|res://*/App_Data.ProcessDB.ssdl|res://*/App_Data.ProcessDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">metadata=res://*/App_Data.ProcessDB.csdl|res://*/App_Data.ProcessDB.ssdl|res://*/App_Data.ProcessDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"</Value>
+    </Setting>
+    <Setting Name="ProcessDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ProcessDB.sdf</Value>
+    </Setting>
+    <Setting Name="AnalyticDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;metadata=res://*/App_Data.AnalyticDB.csdl|res://*/App_Data.AnalyticDB.ssdl|res://*/App_Data.AnalyticDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">metadata=res://*/App_Data.AnalyticDB.csdl|res://*/App_Data.AnalyticDB.ssdl|res://*/App_Data.AnalyticDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string="Data Source={0}"</Value>
+    </Setting>
+    <Setting Name="EmptyAnalyticDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmptyAnalyticDB.sdf</Value>
+    </Setting>
+    <Setting Name="EmptyAnalyticDBPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\testDB\App_Data\AnalyticDB.sdf</Value>
+    </Setting>
+    <Setting Name="EmptyAuditDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmptyAuditDB.sdf</Value>
+    </Setting>
+    <Setting Name="EmptyMainDBFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EmptyMainDB.sdf</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
