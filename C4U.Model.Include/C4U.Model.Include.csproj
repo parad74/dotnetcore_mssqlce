@@ -4,6 +4,16 @@
 		<TargetFramework>netcoreapp3.0</TargetFramework>
 		<PackageId>Count4U.Model.Include</PackageId>
 		</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="amd64\sqlceca40.dll" />
+	  <None Remove="amd64\sqlcecompact40.dll" />
+	  <None Remove="amd64\sqlceer40EN.dll" />
+	  <None Remove="amd64\sqlceme40.dll" />
+	  <None Remove="amd64\sqlceqp40.dll" />
+	  <None Remove="amd64\sqlcese40.dll" />
+	  <None Remove="App_Data\MainDB.sdf" />
+	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="EntityFramework">
 			<Version>6.3.0</Version>
@@ -21,7 +31,32 @@
 		<EntityDeploy Include="..\4.8\C4U.Model\App_Data\MainDB.edmx" Link="App_Data\MainDB.edmx" />
 		<Compile Include="..\4.8\C4U.Model\App_Data\Model6.cs" Link="App_Data\Model6.cs" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="amd64\sqlceca40.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="amd64\sqlcecompact40.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="amd64\sqlceer40EN.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="amd64\sqlceme40.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="amd64\sqlceqp40.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="amd64\sqlcese40.dll">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="App_Data\MainDB.sdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Properties\" />
+		<Folder Include="amd64\" />
 	</ItemGroup>
 </Project>
