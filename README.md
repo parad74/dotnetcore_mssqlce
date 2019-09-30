@@ -16,64 +16,41 @@ That way you can use the designer to visualize and modify the model using the de
 You will need to add new linked files for any new entity classes you add or rename in the designer.
 
 In project dotnet Core it looks so.
-<ItemGroup>
-		<EntityDeploy Include="..\4.8\C4U.Model\App_Data\MainDB.edmx" Link="App_Data\MainDB.edmx" />
-		<Compile Include="..\4.8\C4U.Model\App_Data\Model6.cs" Link="App_Data\Model6.cs" />
-	</ItemGroup>
+
+EntityDeploy Include="..\4.8\C4U.Model\App_Data\MainDB.edmx" Link="App_Data\MainDB.edmx"
+
+Compile Include="..\4.8\C4U.Model\App_Data\Model6.cs" Link="App_Data\Model6.cs"
+
 
 2.	In project dotnet Core delete from app.config all providers.
 
 3.	To project dotnet Core copy folder  amd64 from your .Net project
 with files 
-sqlceca40.dll">
-sqlcecompact40.dll">
-sqlceer40EN.dll">
-sqlceme40.dll">
-sqlceqp40.dll">
-sqlcese40.dll">
+sqlceca40.dll
+sqlcecompact40.dll
+sqlceer40EN.dll
+sqlceme40.dll
+sqlceqp40.dll
+sqlcese40.dll
 
-In project file will add
-<ItemGroup>
-	  <Content Include="amd64\sqlceca40.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="amd64\sqlcecompact40.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="amd64\sqlceer40EN.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="amd64\sqlceme40.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="amd64\sqlceqp40.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="amd64\sqlcese40.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	  <Content Include="App_Data\MainDB.sdf">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Content>
-	</ItemGroup> 
+In project file will add Content Include s
 
-4.	Edit project dotnet core 3 file. Add
-<ItemGroup>
-	<Folder Include="amd64\" />
-</ItemGroup>
+4.	Edit project dotnet core 3 file. Add Folder Include="amd64\"
+
 To include sqlce*.dll to result folder
 
 5.	Add classes to dotnet Core 3 project
 
 
-public partial class MainDB : ObjectContext
+	public partial class MainDB : ObjectContext
 	{
 		static MainDB()
 		{
 			DbConfiguration.SetConfiguration(new CodeBasedDatabaseConfiguration());
 		}
 	}
-
+	
+	
 	public class CodeBasedDatabaseConfiguration : DbConfiguration
 	{
 		public CodeBasedDatabaseConfiguration()
