@@ -65,6 +65,7 @@ To include sqlce*.dll to result folder
 
 5.	Add classes to dotnet Core 3 project
 
+
 public partial class MainDB : ObjectContext
 	{
 		static MainDB()
