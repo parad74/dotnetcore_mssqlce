@@ -136,10 +136,11 @@ public partial class MainDB : ObjectContext
 
 
 7.	How to use. To run with ObjectContext
-//ObjectContext	   work!!!
 
 	
 	var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
+			
+			//ObjectContext	   work!!!
 
 			using (MainDB dc = new MainDB(cs))
 			{
