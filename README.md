@@ -105,6 +105,7 @@ public partial class MainDB : ObjectContext
 	}
   
 6.	How to use. To run with ADO 
+
 		DbProviderFactories.RegisterFactory("System.Data.SqlServerCe.4.0", new SqlCeProviderFactory());
 			var pp = DbProviderFactories.GetFactory("System.Data.SqlServerCe.4.0");
 			string path = Path.GetFullPath(@"../C4U.Model.Include/App_Data");
@@ -136,7 +137,9 @@ public partial class MainDB : ObjectContext
 
 7.	How to use. To run with ObjectContext
 //ObjectContext	   work!!!
-var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
+
+	
+	var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
 
 			using (MainDB dc = new MainDB(cs))
 			{
