@@ -8,7 +8,7 @@ Sample DB -MainDB.sdf.
 Sample Context -MainDB.edmx.
 
 Loot at for explanation steps
-parad74/dotnetcore_mssqlce@beebf90#diff-d9f32fc1395f6c8f94b824c308bd4271
+https://github.com/parad74/dotnetcore_mssqlce/commit/beebf90f1e252f64073794c5a55671735eed906c#diff-d9f32fc1395f6c8f94b824c308bd4271
 
 1.	First Idea I got from https://github.com/efcore/EdmxDotNetCoreSample/ 
 This sample shows a way to work with edmx (EF6 metadata) in a .NET Core project in Visual Studio without designer support.
