@@ -45,16 +45,14 @@ To include sqlce*.dll to result folder
 5.	Add classes to C4U.Model.Include  project
  C4U.Model.Include/Context/CodeBasedDatabaseConfiguration.cs 
  
-
-	public partial class MainDB : ObjectContext
+public partial class MainDB : ObjectContext
 	{
 		static MainDB()
 		{
 			DbConfiguration.SetConfiguration(new CodeBasedDatabaseConfiguration());
 		}
 	}
-	
-	
+
 	public class CodeBasedDatabaseConfiguration : DbConfiguration
 	{
 		public CodeBasedDatabaseConfiguration()
@@ -90,8 +88,12 @@ To include sqlce*.dll to result folder
 
 		DbProviderFactories.RegisterFactory("System.Data.SqlServerCe.4.0", new SqlCeProviderFactory());
 			var pp = DbProviderFactories.GetFactory("System.Data.SqlServerCe.4.0");
+			//classes = DbProviderFactories.GetFactoryClasses();
 			string path = Path.GetFullPath(@"../C4U.Model.Include/App_Data");
 
+			var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =T:\Count4U\trunk\github\Count4U\C4U.Model.Include\App_Data\MainDB.sdf'";
+
+			using (Count4U.Model.App_Data.MainDB dc = new Count4U.Model.App_Data.MainDB(cs))
 			//ADO - work!!!
 			using (DbConnection connection = pp.CreateConnection())       //System.Data.SqlServerCe.SqlCeConnection
 			{
@@ -116,13 +118,11 @@ To include sqlce*.dll to result folder
 				}
 			}
 
-
 7.	How to use. host/Program.cs  To run with ObjectContext
 
 	
-	var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
-			
 			//ObjectContext	   work!!!
+			var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
 
 			using (MainDB dc = new MainDB(cs))
 			{
@@ -136,3 +136,4 @@ To include sqlce*.dll to result folder
 					string message = ext.Message;
 				}
 			}
+
