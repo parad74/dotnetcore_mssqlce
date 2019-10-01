@@ -7,6 +7,9 @@ Without  app.config !
 Sample DB -MainDB.sdf.
 Sample Context -MainDB.edmx.
 
+Loot at for explanation steps
+parad74/dotnetcore_mssqlce@beebf90#diff-d9f32fc1395f6c8f94b824c308bd4271
+
 1.	First Idea I got from https://github.com/efcore/EdmxDotNetCoreSample/ 
 This sample shows a way to work with edmx (EF6 metadata) in a .NET Core project in Visual Studio without designer support.
 It uses a .NET Framework project to host the edmx file, which is supported by the designer, and then imports the edmx file and the relevant generated entity and DbContext classes as linked files in the .NET Core project.
@@ -15,16 +18,16 @@ That way you can use the designer to visualize and modify the model using the de
 
 You will need to add new linked files for any new entity classes you add or rename in the designer.
 
-In project dotnet Core it looks so.
+In project C4U.Model.Include.csproj 30 - 33 lines
 
 EntityDeploy Include="..\4.8\C4U.Model\App_Data\MainDB.edmx" Link="App_Data\MainDB.edmx"
 
 Compile Include="..\4.8\C4U.Model\App_Data\Model6.cs" Link="App_Data\Model6.cs"
 
 
-2.	In project dotnet Core delete from app.config all providers.
+2.	In projects C4U.Model.Include/app.config  and host/app.config delete all providers.
 
-3.	To project dotnet Core copy folder  amd64 from your .Net project
+3.	To project C4U.Model.Include  copy folder  amd64 from your .Net project
 with files 
 sqlceca40.dll
 sqlcecompact40.dll
@@ -33,14 +36,15 @@ sqlceme40.dll
 sqlceqp40.dll
 sqlcese40.dll
 
-In project file will add Content Include s
+In project file C4U.Model.Include/C4U.Model.Include.csproj  will add Content Include s 7-16 lines
 
-4.	Edit project dotnet core 3 file. Add Folder Include="amd64\"
+4.	Edit C4U.Model.Include/C4U.Model.Include.csproj project file. Add Folder Include="amd64\" 60 line
 
 To include sqlce*.dll to result folder
 
-5.	Add classes to dotnet Core 3 project
-
+5.	Add classes to C4U.Model.Include  project
+ C4U.Model.Include/Context/CodeBasedDatabaseConfiguration.cs 
+ 
 
 	public partial class MainDB : ObjectContext
 	{
@@ -82,7 +86,7 @@ To include sqlce*.dll to result folder
 		}
 	}
   
-6.	How to use. To run with ADO 
+6.	How to use. host/Program.cs  To run with ADO 
 
 		DbProviderFactories.RegisterFactory("System.Data.SqlServerCe.4.0", new SqlCeProviderFactory());
 			var pp = DbProviderFactories.GetFactory("System.Data.SqlServerCe.4.0");
@@ -113,7 +117,7 @@ To include sqlce*.dll to result folder
 			}
 
 
-7.	How to use. To run with ObjectContext
+7.	How to use. host/Program.cs  To run with ObjectContext
 
 	
 	var cs = @"metadata=res://*/App_Data.MainDB.csdl|res://*/App_Data.MainDB.ssdl|res://*/App_Data.MainDB.msl;provider=System.Data.SqlServerCe.4.0;provider connection string='Data Source =" + path + @"\MainDB.sdf'";
