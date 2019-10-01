@@ -45,6 +45,8 @@ To include sqlce*.dll to result folder
 5.	Add classes to C4U.Model.Include  project
  C4U.Model.Include/Context/CodeBasedDatabaseConfiguration.cs 
  
+ !!! add partial class for you ObjectContext
+ 
 public partial class MainDB : ObjectContext
 	{
 		static MainDB()
